@@ -11,7 +11,6 @@ const notFoundMiddleware = require('./middleware/not-found')
 const errorMiddleware = require('./middleware/error-handler')
 
 app.use(express.json())
-app.use(express.static("./"))
 
 app.get('/', (req,res)=>{
     res.send('<h1>Store API</h1><a href="/api/v1/products">Products Page</a>')
